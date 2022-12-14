@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-mykeccak = {path = "../mykeccak", features = ["shake"]}
+mykeccak = {path = "../mykeccak", features = ["shake", "sha3"]}
