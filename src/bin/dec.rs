@@ -1,3 +1,3 @@
 fn main() -> std::io::Result<()> {
-	kenc::encdec::encdec(true)
+	kenc::encdec::encdec(false)
 }
