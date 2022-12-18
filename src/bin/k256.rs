@@ -13,6 +13,6 @@ fn main() -> std::io::Result<()> {
 		sha.update(&buf[..len]);
 	}
 	sha.finalize(&mut result);
-	println!("{:02X?}", result);
+	kenc::hexp(&result);
 	Ok(())
 }
