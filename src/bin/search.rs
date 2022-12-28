@@ -39,7 +39,7 @@ fn main() {
 	loop {
 		let len = stdin.read(&mut inbuf).unwrap();
 		if len == 0 { break }
-		sha.update(&inbuf);
+		sha.update(&inbuf[..len]);
 	}
 	let (tx, rx) = channel();
 	for i in 0..NP {
